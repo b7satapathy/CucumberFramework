@@ -7,12 +7,12 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 	@CucumberOptions(
 			features = "src\\main\\java\\com\\Biswajit\\features", 
-			tags= {"~@loginpage"},
-			glue={"src\\test\\java\\com\\Biswajit\\StepDefinitions"}, 
+			tags= {"~@loginpage, @EditMyProfile"},
+			glue={"com.Biswajit.StepDefinitions"}, 
 			format= {"pretty","html:test-outout"}, 
 			monochrome = true,
 			strict = true,
-			dryRun = true			
+			dryRun = false		
 			)
 
 

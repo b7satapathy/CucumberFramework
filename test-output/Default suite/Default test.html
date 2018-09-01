@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Aug 31 04:48:57 IST 2018</td>
+<td>Started on:</td><td>Sat Sep 01 05:59:58 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (791 ms)</td>
+<tr><td>Total time:</td><td>26 seconds (26439 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,8 +75,8 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.Biswajit.TestRunner.Runner.feature()'><b>feature</b><br>Test class: com.Biswajit.TestRunner.Runner<br>Test method: Runs Cucumber Feature<br>Parameters: Login page functionality</td>
-<td><div><pre>cucumber.runtime.CucumberException: cucumber.runtime.CucumberException: There are undefined steps
+<td title='com.Biswajit.TestRunner.Runner.feature()'><b>feature</b><br>Test class: com.Biswajit.TestRunner.Runner<br>Test method: Runs Cucumber Feature<br>Parameters: Edit My Profile Feature</td>
+<td><div><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: expected [http://demosite.center/wordpress/wp-admin/profile.php] but found [http://demosite.center/wordpress/wp-admin/about.php]
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -104,19 +104,17 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: cucumber.runtime.CucumberException: There are undefined steps
-	at cucumber.api.testng.FeatureResultListener.collectError(FeatureResultListener.java:60)
-	at cucumber.api.testng.FeatureResultListener.result(FeatureResultListener.java:45)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:282)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
-	... 26 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace1151704483", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1151704483'><pre>cucumber.runtime.CucumberException: cucumber.runtime.CucumberException: There are undefined steps
+Caused by: java.lang.AssertionError: expected [http://demosite.center/wordpress/wp-admin/profile.php] but found [http://demosite.center/wordpress/wp-admin/about.php]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.Biswajit.StepDefinitions.EditMyProfileSteps.user_is_in_edit_my_profile_page(EditMyProfileSteps.java:34)
+	at ?.Given user is in edit my profile page(EditMyProfile.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace355649049", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace355649049'><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: expected [http://demosite.center/wordpress/wp-admin/profile.php] but found [http://demosite.center/wordpress/wp-admin/about.php]
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -144,19 +142,17 @@ Caused by: cucumber.runtime.CucumberException: There are undefined steps
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: cucumber.runtime.CucumberException: There are undefined steps
-	at cucumber.api.testng.FeatureResultListener.collectError(FeatureResultListener.java:60)
-	at cucumber.api.testng.FeatureResultListener.result(FeatureResultListener.java:45)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:282)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
-	... 26 more
+Caused by: java.lang.AssertionError: expected [http://demosite.center/wordpress/wp-admin/profile.php] but found [http://demosite.center/wordpress/wp-admin/about.php]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.Biswajit.StepDefinitions.EditMyProfileSteps.user_is_in_edit_my_profile_page(EditMyProfileSteps.java:34)
+	at ?.Given user is in edit my profile page(EditMyProfile.feature:5)
 </pre></div></td>
-<td>0</td>
+<td>25</td>
 <td>com.Biswajit.TestRunner.Runner@4d1b0d2a</td></tr>
 </table><p>
 </body>

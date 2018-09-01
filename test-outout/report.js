@@ -1,383 +1,178 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/main/java/com/Biswajit/features/loginPageTest.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("EditMyProfile.feature");
 formatter.feature({
   "line": 2,
-  "name": "Login page functionality",
-  "description": "\r\nDescription: It is to check the login functionality of the demo.wordpress WebApplication\r\n       with valid and invalid login credentials.\r\n       and to check the links and logo of the WebApplication is displyed.",
-  "id": "login-page-functionality",
+  "name": "Edit My Profile Feature",
+  "description": "This is to check the feature of editing users profle",
+  "id": "edit-my-profile-feature",
   "keyword": "Feature",
   "tags": [
     {
       "line": 1,
-      "name": "@loginpage"
+      "name": "@EditMyProfile"
     }
   ]
 });
-formatter.scenarioOutline({
-  "line": 9,
-  "name": "Login with valid credentilas",
-  "description": "",
-  "id": "login-page-functionality;login-with-valid-credentilas",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 11,
-  "name": "user enters valid \"\u003cuserid\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 12,
-  "name": "users clicks on login button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 13,
-  "name": "user should be logged in and redirected to the Homepage",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 15,
-  "name": "",
-  "description": "",
-  "id": "login-page-functionality;login-with-valid-credentilas;",
-  "rows": [
-    {
-      "cells": [
-        "userid",
-        "password"
-      ],
-      "line": 17,
-      "id": "login-page-functionality;login-with-valid-credentilas;;1"
-    },
-    {
-      "cells": [
-        "admin",
-        "demo123"
-      ],
-      "line": 18,
-      "id": "login-page-functionality;login-with-valid-credentilas;;2"
-    }
-  ],
-  "keyword": "Examples"
+formatter.before({
+  "duration": 12626372708,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 18,
-  "name": "Login with valid credentilas",
+  "line": 4,
+  "name": "User is able to edit his/her profile in wordpress demo web application",
   "description": "",
-  "id": "login-page-functionality;login-with-valid-credentilas;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@loginpage"
-    }
-  ]
-});
-formatter.step({
-  "line": 11,
-  "name": "user enters valid \"admin\" and \"demo123\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 12,
-  "name": "users clicks on login button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 13,
-  "name": "user should be logged in and redirected to the Homepage",
-  "keyword": "Then "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.scenarioOutline({
-  "line": 22,
-  "name": "Login with invalid credentials",
-  "description": "",
-  "id": "login-page-functionality;login-with-invalid-credentials",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 24,
-  "name": "user enters invalid \"\u003cuserid\u003e\" and \"\u003cpassword\u003e\" combination",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 25,
-  "name": "user clicks on login button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 26,
-  "name": "error message should come",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 27,
-  "name": "user must not be logged in to the application",
-  "keyword": "And "
-});
-formatter.examples({
-  "line": 29,
-  "name": "",
-  "description": "",
-  "id": "login-page-functionality;login-with-invalid-credentials;",
-  "rows": [
-    {
-      "cells": [
-        "userid",
-        "password"
-      ],
-      "line": 31,
-      "id": "login-page-functionality;login-with-invalid-credentials;;1"
-    },
-    {
-      "cells": [
-        "admin",
-        ""
-      ],
-      "line": 32,
-      "id": "login-page-functionality;login-with-invalid-credentials;;2"
-    },
-    {
-      "cells": [
-        "",
-        "demo123"
-      ],
-      "line": 33,
-      "id": "login-page-functionality;login-with-invalid-credentials;;3"
-    },
-    {
-      "cells": [
-        "demo123",
-        "admin"
-      ],
-      "line": 34,
-      "id": "login-page-functionality;login-with-invalid-credentials;;4"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.scenario({
-  "line": 32,
-  "name": "Login with invalid credentials",
-  "description": "",
-  "id": "login-page-functionality;login-with-invalid-credentials;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@loginpage"
-    }
-  ]
-});
-formatter.step({
-  "line": 24,
-  "name": "user enters invalid \"admin\" and \"\" combination",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 25,
-  "name": "user clicks on login button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 26,
-  "name": "error message should come",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 27,
-  "name": "user must not be logged in to the application",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.scenario({
-  "line": 33,
-  "name": "Login with invalid credentials",
-  "description": "",
-  "id": "login-page-functionality;login-with-invalid-credentials;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@loginpage"
-    }
-  ]
-});
-formatter.step({
-  "line": 24,
-  "name": "user enters invalid \"\" and \"demo123\" combination",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 25,
-  "name": "user clicks on login button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 26,
-  "name": "error message should come",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 27,
-  "name": "user must not be logged in to the application",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.scenario({
-  "line": 34,
-  "name": "Login with invalid credentials",
-  "description": "",
-  "id": "login-page-functionality;login-with-invalid-credentials;;4",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@loginpage"
-    }
-  ]
-});
-formatter.step({
-  "line": 24,
-  "name": "user enters invalid \"demo123\" and \"admin\" combination",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 25,
-  "name": "user clicks on login button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 26,
-  "name": "error message should come",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 27,
-  "name": "user must not be logged in to the application",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.scenario({
-  "line": 38,
-  "name": "Wordpress Logo is displyed on the login page and Forgot password link is displayed",
-  "description": "",
-  "id": "login-page-functionality;wordpress-logo-is-displyed-on-the-login-page-and-forgot-password-link-is-displayed",
+  "id": "edit-my-profile-feature;user-is-able-to-edit-his/her-profile-in-wordpress-demo-web-application",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 40,
-  "name": "logo is displayed",
+  "line": 5,
+  "name": "user is in edit my profile page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 41,
-  "name": "forgot password link is displayed",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 42,
-  "name": "click on forgot password link",
+  "line": 6,
+  "name": "user is able to choose colour scheme",
   "keyword": "When "
 });
 formatter.step({
-  "line": 43,
-  "name": "page should be redirected to reset login credentials",
+  "line": 7,
+  "name": "user is able to check and uncheck the toolbar option",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 8,
+  "name": "user is able to choose his preferred language",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "user is able to enter his/her username, password and website name",
+  "rows": [
+    {
+      "cells": [
+        "username",
+        "password",
+        "websitename"
+      ],
+      "line": 10
+    },
+    {
+      "cells": [
+        "user1",
+        "pass1",
+        "web1@mail.com"
+      ],
+      "line": 11
+    },
+    {
+      "cells": [
+        "user2",
+        "pass2",
+        "web2@mail.com"
+      ],
+      "line": 12
+    }
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 13,
+  "name": "user is able to write his/her biographical information",
+  "rows": [
+    {
+      "cells": [
+        "biography"
+      ],
+      "line": 14
+    },
+    {
+      "cells": [
+        "this is user1 biography"
+      ],
+      "line": 15
+    },
+    {
+      "cells": [
+        "this is user2 biography"
+      ],
+      "line": 16
+    }
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 17,
+  "name": "user is able to click on generate password",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 18,
+  "name": "user is able to click on update profile",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 19,
+  "name": "user profile is updated",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "EditMyProfileSteps.user_is_in_edit_my_profile_page()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 12197067349,
+  "error_message": "java.lang.AssertionError: expected [http://demosite.center/wordpress/wp-admin/profile.php] but found [http://demosite.center/wordpress/wp-admin/about.php]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:453)\r\n\tat org.testng.Assert.assertEquals(Assert.java:463)\r\n\tat com.Biswajit.StepDefinitions.EditMyProfileSteps.user_is_in_edit_my_profile_page(EditMyProfileSteps.java:34)\r\n\tat ✽.Given user is in edit my profile page(EditMyProfile.feature:5)\r\n",
+  "status": "failed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "EditMyProfileSteps.user_is_able_to_choose_colour_scheme()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
+});
+formatter.match({
+  "location": "EditMyProfileSteps.user_is_able_to_check_and_uncheck_the_toolbar_option()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "EditMyProfileSteps.user_is_able_to_choose_his_preferred_language()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "EditMyProfileSteps.user_is_able_to_enter_his_her_username_password_and_website_name(DataTable)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "EditMyProfileSteps.user_is_able_to_write_his_her_biographical_information(DataTable)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "EditMyProfileSteps.user_is_able_to_click_on_generate_password()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "EditMyProfileSteps.user_is_able_to_click_on_update_profile()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "EditMyProfileSteps.user_profile_is_updated()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.after({
+  "duration": 854407212,
+  "status": "passed"
 });
 });

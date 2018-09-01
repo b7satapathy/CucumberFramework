@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="791" started-at="2018-08-30T23:18:57Z" finished-at="2018-08-30T23:18:58Z">
+  <suite name="Default suite" duration-ms="26439" started-at="2018-09-01T00:29:58Z" finished-at="2018-09-01T00:30:25Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Biswajit.TestRunner.Runner@4d1b0d2a]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="791" started-at="2018-08-30T23:18:57Z" finished-at="2018-08-30T23:18:58Z">
+    <test name="Default test" duration-ms="26439" started-at="2018-09-01T00:29:58Z" finished-at="2018-09-01T00:30:25Z">
       <class name="com.Biswajit.TestRunner.Runner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.Biswajit.TestRunner.Runner@4d1b0d2a]" name="setUpClass" is-config="true" duration-ms="344" started-at="2018-08-30T23:18:57Z" finished-at="2018-08-30T23:18:57Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.Biswajit.TestRunner.Runner@4d1b0d2a]" name="setUpClass" is-config="true" duration-ms="300" started-at="2018-09-01T00:29:58Z" finished-at="2018-09-01T00:29:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Biswajit.TestRunner.Runner@4d1b0d2a]" name="feature" duration-ms="134" started-at="2018-08-30T23:18:58Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-08-30T23:18:58Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Biswajit.TestRunner.Runner@4d1b0d2a]" name="feature" duration-ms="25847" started-at="2018-09-01T00:29:59Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-09-01T00:30:25Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Login page functionality]]>
+                <![CDATA[Edit My Profile Feature]]>
               </value>
             </param>
           </params>
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[cucumber.runtime.CucumberException: There are undefined steps]]>
+              <![CDATA[java.lang.AssertionError: expected [http://demosite.center/wordpress/wp-admin/profile.php] but found [http://demosite.center/wordpress/wp-admin/about.php]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: cucumber.runtime.CucumberException: There are undefined steps
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: expected [http://demosite.center/wordpress/wp-admin/profile.php] but found [http://demosite.center/wordpress/wp-admin/about.php]
 at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -55,24 +55,22 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: cucumber.runtime.CucumberException: There are undefined steps
-at cucumber.api.testng.FeatureResultListener.collectError(FeatureResultListener.java:60)
-at cucumber.api.testng.FeatureResultListener.result(FeatureResultListener.java:45)
-at cucumber.runtime.Runtime.runStep(Runtime.java:282)
-at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
-at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
-at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
-... 26 more
+Caused by: java.lang.AssertionError: expected [http://demosite.center/wordpress/wp-admin/profile.php] but found [http://demosite.center/wordpress/wp-admin/about.php]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.Biswajit.StepDefinitions.EditMyProfileSteps.user_is_in_edit_my_profile_page(EditMyProfileSteps.java:34)
+at ✽.Given user is in edit my profile page(EditMyProfile.feature:5)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.Biswajit.TestRunner.Runner@4d1b0d2a]" name="tearDownClass" is-config="true" duration-ms="157" started-at="2018-08-30T23:18:58Z" finished-at="2018-08-30T23:18:58Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.Biswajit.TestRunner.Runner@4d1b0d2a]" name="tearDownClass" is-config="true" duration-ms="116" started-at="2018-09-01T00:30:25Z" finished-at="2018-09-01T00:30:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
